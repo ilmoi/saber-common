@@ -85,7 +85,6 @@ jspm_packages/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Storybook build outputs
 .out
@@ -93,7 +92,6 @@ dist
 storybook-static
 
 # rollup.js default build output
-dist/
 
 # Gatsby files
 .cache/
