@@ -22,10 +22,8 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
-    "dist/",
-    "src/"
+    "dist/"
   ],
-  "prepare": "yarn build",
   "dependencies": {
     "@saberhq/option-utils": "^1.14.9",
     "@solana/buffer-layout": "^4.0.0",
