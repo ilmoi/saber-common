@@ -1,22 +1,11 @@
 {
-  "extends": "@saberhq/tsconfig/tsconfig.react.json",
+  "extends": "@saberhq/tsconfig/tsconfig.mono.json",
   "compilerOptions": {
-    "allowJs": true,
-    "noEmit": true,
-    "jsxImportSource": "react",
-    "types": ["jest"]
+    "rootDir": "src/",
+    "outDir": "dist/esm/",
+    "lib": ["ES2021.Promise", "ES2019"]
   },
-  "files": ["jest.config.mjs", ".eslintrc.cjs"],
-  "include": ["./**/*.test.ts"],
-  "references": [
-    { "path": "packages/anchor-contrib/" },
-    { "path": "packages/chai-solana/" },
-    { "path": "packages/option-utils/" },
-    { "path": "packages/solana-contrib/" },
-    { "path": "packages/stableswap-sdk/" },
-    { "path": "packages/token-utils/" },
-    { "path": "packages/tuple-utils/" },
-    { "path": "packages/use-solana/" },
-    { "path": "packages/wallet-adapter-icons/" }
+  "include": [
+    "src/"
   ]
 }
