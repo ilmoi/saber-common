@@ -1,28 +1,10 @@
 {
-  "name": "@saberhq/solana-contrib",
-  "version": "1.14.9",
-  "description": "Common types and libraries for Solana",
-  "homepage": "https://github.com/saber-hq/saber-common/tree/master/packages/solana-contrib#readme",
-  "repository": "git+https://github.com/saber-hq/saber-common.git",
-  "bugs": "https://github.com/saber-hq/saber-common/issues",
-  "funding": "https://www.coingecko.com/en/coins/saber",
-  "author": "Saber Team <team@saber.so>",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "tsc && tsc -P tsconfig.cjs.json",
-    "clean": "rm -fr dist",
-    "prepublishOnly": "npm run build"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
-    }
-  },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "name": "saber-solana-contrib",
+  "version": "0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/"
+    "/dist"
   ],
   "dependencies": {
     "@saberhq/option-utils": "^1.14.9",
@@ -46,9 +28,5 @@
   "peerDependencies": {
     "@solana/web3.js": "^1.42",
     "bn.js": "^4 || ^5"
-  },
-  "gitHead": "f9fd3fbd36a7a6dd6f5e9597af5309affe50ac0e",
-  "publishConfig": {
-    "access": "public"
   }
 }
