@@ -25,6 +25,7 @@
     "dist/",
     "src/"
   ],
+  "prepare": "yarn build",
   "dependencies": {
     "@saberhq/option-utils": "workspace:^",
     "@solana/buffer-layout": "^4.0.0",
